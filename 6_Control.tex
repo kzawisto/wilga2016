@@ -1,0 +1,16 @@
+\section{SYSTEM CONTROL AND MONITORING} 
+A dedicated web application is used for the monitoring and control of CMS electronics. As the new L1 Trigger uses standarized electronics designs and standard communication protocol, significant effort has been made to provide shared implementation of low level functionalities that are common across different L1 subsystems.
+This gave rise to SWATCH, a specialized web container for ugraded L1 Trigger control application, and MicroHAL, a high-level hardware control library. The structure of the OMTF Control Software is defined by the usage of these components, as it
+comprises two basic modules: OMTF System, a SWATCH-based web application, and OMTF Hardware Control.
+
+OMTF System was built upon SWATCH-based abstractions of the system, the state of the system, operations executed on the hardware, and large scale hardware components. It provides access to many features granted by SWATCH framework, such as 
+graphical user interface for diagnostics, monitoring and manual control, the connection to the CMS hierarchical Run Control allowing the subsystem to be operated automatically with the rest of L1 trigger and standarized configuration using relational 
+database provided by ORACLE.
+
+OMTF Hardware Control contains implementations of various hardware routines required to operate the system. It makes use of detailed tree-like firmware description provided by MicroHAL library and wraps it in it's own object oriented description, to provide
+compile-time validation, integration with the code analysis engine provided by the integrated development environment and additional order and convenience. The object reflection is split into two parts: blueprint base classes, generated automatically 
+from the firmware description used by MicroHAL, and the subclasses containing needed implementations.
+
+Both aforementioned components are written in C++ and compiled to dynamical shared libraries with use of the standarized Make scripts used normally by the majority of CMS online processing software.
+
+As the OMTF hardware makes use of firmware blocks and hardware designs developed for other L1 subsytems, the components of supplied software were integrated into OMTF software when possible. 

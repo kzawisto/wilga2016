@@ -1,0 +1,7 @@
+#!/bin/sh
+
+pdflatex -shell-escape omtf
+bibtex omtf
+pdflatex  -shell-escape omtf
+pdflatex  -shell-escape omtf
+

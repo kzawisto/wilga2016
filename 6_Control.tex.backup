@@ -1,0 +1,19 @@
+\section{SYSTEM CONTROL AND MONITORING} 
+
+Za monitorowanie i kontrolę dedykowanej elektroniki, w której zaimplementowany jest system, odpowiada aplikacja sieciowa,
+udostępniając graficzny interfejs użytkownika i połączenie z mechanizmem hierarchicznej kontroli całego systemu wyzwalania CMS. 
+Nowy układ wyzwalania używa ustandaryzowanych komponentów elektronicznych i wspólnego protokołu komunikacji, co pozwoliło zaimplementować wiele niskopoziomowych funkcjonalności w dzielonych komponentach 
+takich jak SWATCH [2], kontener ww aplikacji kontrolno-monitorujących i microHAL [3], wysokopoziomowa biblioteka do komunikacji z elektroniką. Konstrukcja oprogramowania OMTF wynika bezpośrednio z tej architektury
+, gdyż składa się ono z OMTF System tj. aplikacji SWATCH i z biblioteki OMTF Hardware Control, która to zawiera obiektowy opis elektroniki OMTF i implementacje niezbędnych operacji na niej przy pomocy microHAL
+
+
+
+A dedicated web application is used for the monitoring and control of CMS electronics. As the new L1 Trigger uses standarized electronics designs and standard communication protocol, significant effort has been made to provide shared implementation of low level functionalities that are common across different L1 subsystems.
+This gave rise to SWATCH, a specialized web container for ugraded L1 Trigger control application, and MicroHAL, a high-level hardware control library. The structure of the OMTF Control Software is defined by the usage of these components, as it
+comprises two basic modules: OMTF System, a SWATCH-based web application, and OMTF Hardware Control.
+
+OMTF System is built of SWATCH-based abstractions of the system, the state of the system, operations executed on the hardware, and large scale hardware components. It provides access to many features granted by SWATCH framework, such as 
+graphical user interface for diagnostics, monitoring and manual control, the connection to the CMS hierarchical Run Control allowing the subsystem to be operated automatically with the rest of L1 trigger and standarized configuration using relational 
+database provided by ORACLE.
+
+OMTF Hardware Control contains implementations of various hardware routines required to operate the system. It makes use of detailed tree-firmware description
