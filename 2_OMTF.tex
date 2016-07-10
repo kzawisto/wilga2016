@@ -6,5 +6,5 @@ Constant set of 8 reference layers is foreordained. In the beginning of the algo
  for every hit. For each layer hit with the smallest $\phi_{dist}$ value is chosen and corresponding PDF value is taken. If the PDF value is bigger than 0, the processed layer is counted as an \textit{active layer}. Subsequently the PDF values from all layers are added up. In the end for each reference hit there is chosen one Golden Pattern fitted best to event hits. The basic criterion for that choice is the number of \textit{active layers} corresponding to each GP - the pattern with more \textit{active layers} is favoured. If that number is the same for a few GPs then the pattern with the biggest sum of PDF values is selected. As this procedure is followed for up to 4 reference hits, on the output there are up to 4 candidates in the Overlap region per one event.
 
 Described algorithm was developed on the grounds of Monte Carlo simulations and is implemented in dedicated electronics as a FPGA firmware.
-
+%
 \cite{OMTF-Wilga2014}
