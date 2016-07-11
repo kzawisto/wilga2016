@@ -1,10 +1,8 @@
 \begin{thebibliography}{1}
 
 \bibitem{OMTF-Wilga2014}
-Zabołotny, W.~M., Bartkiewicz, D., Bluj, M., Buńkowski, K., Byszuk, A.,
-  Doroba, K., Górski, M., Kalinowski, A., Kierzkowski, K., Konecki, M.,
-  Królikowski, J., Okliński, W., Olszewski, M., and Poźniak, K., ``{FPGA
-  Implementation of Overlap MTF Trigger - preliminary study},''
-\newblock (Article to be published in Proc. SPIE 9290 (2014).
+Zabołotny, W.~M. et~al., ``{FPGA Implementation of Overlap MTF Trigger --
+  preliminary study},'' {\em Proc. SPIE Int. Soc. Opt. Eng.}~{\bf 9290},
+  929025 (2014).
 
 \end{thebibliography}

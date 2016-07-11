@@ -3,48 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: omtf.aux
 The style file: spiebib.bst
 Database file #1: biblio.bib
-Warning--empty title in OMTF-Wilga2014
-Warning--empty volume in OMTF-Wilga2014
-Warning--empty year in OMTF-Wilga2014
 You've used 1 entry,
             1993 wiz_defined-function locations,
-            507 strings with 4149 characters,
-and the built_in function-call counts, 325 in all, are:
-= -- 14
-> -- 44
+            511 strings with 3999 characters,
+and the built_in function-call counts, 301 in all, are:
+= -- 30
+> -- 8
 < -- 0
-+ -- 15
-- -- 14
-* -- 39
-:= -- 69
++ -- 3
+- -- 2
+* -- 18
+:= -- 43
 add.period$ -- 1
 call.type$ -- 1
 change.case$ -- 1
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 5
-empty$ -- 15
-format.name$ -- 14
-if$ -- 59
+cite$ -- 1
+duplicate$ -- 19
+empty$ -- 24
+format.name$ -- 2
+if$ -- 75
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 1
-newline$ -- 7
+newline$ -- 6
 num.names$ -- 1
 pop$ -- 2
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 20
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 12
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 1
+warning$ -- 0
+while$ -- 2
 width$ -- 2
-write$ -- 10
-(There were 3 warnings)
+write$ -- 11
