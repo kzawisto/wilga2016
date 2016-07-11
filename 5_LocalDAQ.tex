@@ -1,6 +1,8 @@
 \section{SYSTEM TESTS WITH LOCAL DATA}
-For further reconstruction analysis CMS was equipped with Data Acquisition
-System (DAQ), which saves cases selected by detector. Regardless of
+
+For further (offline) event reconstruction and data analysis CMS is 
+equipped with Data Acquisition
+System (DAQ), which saves events selected by trigger. Regardless of
 it, OMTF introduced ability to read data directly from memory buffers.
 This readout set was called Local Data Acquisition System (Local DAQ)
 and it is a kind of \textit{spy module}, which means it allows to snapshot
@@ -9,14 +11,15 @@ or system feedback analysis.
 
 Local DAQ returns 3 steps of data acquisition and analysis - raw hits
 collected by detectors (AlgoHits), data after selection by hardware-built-in
-algorithm (AlgoMuons) and data after ghostbusting (CandMuons). There
+algorithm (AlgoMuons) and data after ghost-busting (CandMuons). There
 is too much data being processed by hardware at one point of time,
-so Local DAQ reads it with bounded bandwith.
+so Local DAQ reads it with limited bandwidth.
 
 Data collected from Local DAQ can be analysed to check angular distribution
-of hits in the barrel region. It is expected to be uniform with some
-fluctuations in the chamber overlapping region. If expectations are
-met, it means that detectors work properly and give CMS statistically
+of hits from all types of detector. It is expected to be roughly uniform, with some
+fluctuations in the chamber overlapping region due to chamber acceptance. 
+If expectations are
+met, it indicates that detectors work properly and give CMS statistically
 correct data.
 
 Other important things to check are correlations of hits between chambers.
@@ -27,7 +30,9 @@ analysis. If AlgoMuons data is included, hardware algorithm work may
 be checked either.
 
 The next step in local data analysis is to compare results of hardware-built-in
-algorithm with outcome of emulation of algorithm work. There are plenty
-of features to check such as muon energy, muon momentum, hit phi angle
-and so on. Such analysis will help to upgrade algorithm and in effect
-total efficiency of OMTF.
+algorithm with outcome of emulation of algorithm work. To do this the events
+from simulation (test pulses) are injected into electronics, processed and
+read-out. The results must exactly match the expectations.
+
+The Local DAQ and simplified analysis performed with collected data played 
+a key role in initial commissioning of OMTF.

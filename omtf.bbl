@@ -1,5 +1,9 @@
 \begin{thebibliography}{1}
 
+\bibitem{CMS-JINST}
+Chatrchyan, S. et~al., ``{The CMS experiment at the CERN LHC},'' {\em
+  JINST}~{\bf 3},  S08004 (2008).
+
 \bibitem{OMTF-Wilga2014}
 Zabołotny, W.~M. et~al., ``{FPGA Implementation of Overlap MTF Trigger --
   preliminary study},'' {\em Proc. SPIE Int. Soc. Opt. Eng.}~{\bf 9290},
