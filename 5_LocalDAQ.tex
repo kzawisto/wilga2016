@@ -6,8 +6,7 @@ System (DAQ), which saves events selected by trigger. Regardless of
 it, OMTF introduced ability to read data directly from memory buffers.
 This readout set was called Local Data Acquisition System (Local DAQ)
 and it is a kind of \textit{spy module}, which means it allows to snapshot
-some raw data collected by detectors for further hits correlation
-or system feedback analysis.
+some raw data collected by OMTF  for further prompt feedback analyses.
 
 Local DAQ returns 3 steps of data acquisition and analysis - raw hits
 collected by detectors (AlgoHits), data after selection by hardware-built-in
@@ -16,7 +15,8 @@ is too much data being processed by hardware at one point of time,
 so Local DAQ reads it with limited bandwidth.
 
 Data collected from Local DAQ can be analysed to check angular distribution
-of hits from all types of detector. It is expected to be roughly uniform, with some
+of hits from all types of detector and out-coming muons. 
+It is expected to be roughly uniform, with some
 fluctuations in the chamber overlapping region due to chamber acceptance. 
 If expectations are
 met, it indicates that detectors work properly and give CMS statistically
@@ -25,7 +25,7 @@ correct data.
 Other important things to check are correlations of hits between chambers.
 Due to geometry of OMTF, some chambers are placed directly next to
 others (RPC and DT in barrel region or RPC and CSC in endcap region).
-This allows to check whether detectors work properly by data correlation
+This allows to quickly check whether detectors work properly by data correlation
 analysis. If AlgoMuons data is included, hardware algorithm work may
 be checked either.
 
@@ -35,4 +35,5 @@ from simulation (test pulses) are injected into electronics, processed and
 read-out. The results must exactly match the expectations.
 
 The Local DAQ and simplified analysis performed with collected data played 
-a key role in initial commissioning of OMTF.
+a key role in initial commissioning of OMTF. The readout of memory buffers 
+will be further used for online OMTF monitoring.
